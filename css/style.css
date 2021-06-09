@@ -1,0 +1,51 @@
+body {
+  background-color: #14131a;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+.conteiner{
+  max-width: 1140px;
+  margin: auto;/*автоматическое выравнивание по горизонтали(по центру)*/
+}
+
+.header{
+  display: flex; /*теперь занимает не всю линию*/
+  align-items: center;/*ставит хедер по середине объекта*/
+  padding-top: 40px;
+  margin-bottom: 80px;
+}
+
+.logo-link{
+    display: inline-block; /* заключает картинку в прямоугольную границу*/
+    margin-right: 50px;/*отступ м/д логтипом и менюшкой*/
+
+  }
+.nav-menu{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex; /*позволяет выстроить в линию*/
+}
+
+.nav-menu-item{
+  margin-right: 30px; /*отступы между словами в меню*/
+}
+.nav-menu-link{
+  text-decoration: none; /*убирает подчёркивание сылок(сокращённо набрать tdn) */
+  color: rgba(255, 255, 255, 0.5);
+}
+.film-date{
+  display: block;
+
+  font-size: 24px;/*размер шрифта*/
+line-height: 28px;/*высота строки*/
+color: rgba(255, 255, 255, 0.8); /*эти три из фигмы*/
+margin-bottom: 38px;
+}
+.film-description{
+  margin-top: 40px;
+  max-width: 423px;
+ font-size: 18px;
+ line-height: 140%;
+ color: rgba(255, 255, 255, 0.8);
+}
