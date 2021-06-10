@@ -1,5 +1,5 @@
 body {
-  background-color: #14131a;
+ /* background-color: #14131a; УБРАЛИ поскольку ломается при заливке картинки,смотри внизу*/
   color: #fff;
   font-family: "Roboto", sans-serif;
 }
@@ -49,3 +49,53 @@ margin-bottom: 38px;
  line-height: 140%;
  color: rgba(255, 255, 255, 0.8);
 }
+.button{
+  margin: 15px 30px; /*Сокращённо p15-30*/
+  text-decoration: none;
+  border-bottom: none;
+  border-radius: 5px;
+  cursor: pointer;
+  /*margin-top: 70px;*/
+}
+.button-icon, 
+.button-text{
+  display: inline-block;
+  vertical-align: middle;/*сначала заключили картинку в прямоугольную границу,а потом ВЫРАВНИВАЕМ ЕЁ ВЕРТИКАЛЬНО ПО ЦЕНТРУ*/
+}
+.button-text{
+font-size: 14px;
+line-height: 16px;
+/*color: #FFFFFF;*/
+margin-left: 10px;
+}
+
+.button-primary{
+width: 204px; 
+height: 46px;
+background: #FFF;
+color: #8D0019;
+/*margin-right: 50px;*/
+}
+.button-link{
+color: #FFFFFF
+}
+.button-group{
+  margin-top: 70px;
+}
+.venom{
+   position: absolute;/*Позволяет картинке игнорировать объекты,т.е. накладывается поверх объектов*/
+   right: 0;
+   top: 0;
+}
+
+/*ПОСКОЛЬКУ  У НАС ДВОЙНОЙ ФОН,ТО ТАК ПИСАТЬ НЕ ОПТИМАЛЬНО
+.blood{
+  background-image: url(../img/blood.png);
+  background-repeat: no-repeat;
+  background-position: top right;/*переносим фон(кровь) вправо вверх */
+  .blood{
+     background: /* #14131a*/ url(../img/blood.png) no-repeat top right,#14131a url(../img/backgraund2.jpg) no-repeat center / 100%;
+     /*для бади был фоновый цвет из-за картинки он слетает,так что мы его добавим сюда,а оттуда уберём*/
+     /*!Цвет фона не срабатывает на первой позиции,надо поставить на другую */
+     /*некрасиво выглядит картинка расширем её через /*/
+  }
